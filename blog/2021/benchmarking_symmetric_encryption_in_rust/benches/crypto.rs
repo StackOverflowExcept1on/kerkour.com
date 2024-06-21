@@ -1,7 +1,7 @@
 use aes_gcm::Aes256Gcm;
 use chacha20::{cipher::KeyIvInit, cipher::StreamCipher, ChaCha20};
 use chacha20poly1305::{
-    aead::{AeadInPlace, NewAead},
+    aead::{AeadInPlace, KeyInit},
     ChaCha20Poly1305, XChaCha20Poly1305,
 };
 use criterion::*;
